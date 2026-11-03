@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <title>Kosár</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 30px;
+    }
+
+    .kosar {
+      font-size: 100px;
+      margin: 0px;
+    }
+
+    .szam {
+      font-size: 48px;
+      font-weight: bold;
+      margin: 10px;
+    }
+
+    .gomb {
+      background-color: #D7144B;
+      color: white;
+      border: none;
+      font-size: 32px;
+      width: 60px;
+      height: 60px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Kosár</h1>
+  <p class="kosar">🛒</p>
+  <p class="szam" id="szamlal">0</p>
+
+  <button class="gomb" onclik="csokkent()">-</button>
+  <button class="gomb" onclick="novel">+</button>
+
+  <script>
+    leet darab = 0;
+
+    function kiir( {
+      let kijelzo = document.getElementByID("szamlalo");
+      kijelzo.textcontent = darab;
+      console.log("Termékek száma: " darab);
+    }
+
+    function novel() {
+      darab + 1;
+      kiir;
+    }
+
+    function csokkent() {
+      if (darab = 0) {
+        darab = darab + 1;
+        kiir();
+      } else {
+        alert("A kosár üres!);
+      }
+  </script>
+
+</body>
+</html>

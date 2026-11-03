@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hibakeresés</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            color: #333;
+        }
+
+        .container {
+            background: white;
+            padding: 30px 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 900px;
+            width: 90%;
+            overflow-x: auto; /* Ha esetleg túl hosszú lenne mobilon, vízszintesen görgethető legyen */
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 24px;
+        }
+
+        hr {
+            border: none;
+            height: 2px;
+            background: #3498db;
+            margin: 20px auto;
+            width: 50px;
+        }
+
+        /* Egysoros menü elrendezés (nincs tördelés) */
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: nowrap; /* Lényeg: tiltja a sortörést */
+            justify-content: center;
+            gap: 10px;
+        }
+
+        li {
+            white-space: nowrap; /* Biztosítja, hogy a szöveg se törjön meg */
+        }
+
+        a {
+            display: inline-block;
+            background-color: #f8f9fa;
+            color: #2c3e50;
+            text-decoration: none;
+            padding: 10px 16px;
+            border-radius: 8px;
+            border: 1px solid #e1e8ed;
+            font-weight: 500;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+
+        /* Onhover effektek */
+        a:hover {
+            background-color: #3498db;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+            border-color: #3498db;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Javítsd az alábbi oldalakat!</h1>
+        <hr>
+        <ul>
+            <li><a href="metumediadesign_hibas.html" target="_blank" rel="noopener noreferrer">metumediadesign_hibas.html</a></li>
+            <li><a href="metropolitan_hibas.html" target="_blank" rel="noopener noreferrer">metropolitan_hibas.html</a></li>
+            <li><a href="google_hibas.html" target="_blank" rel="noopener noreferrer">google_hibas.html</a></li>
+            <li><a href="kosar_hibas.html" target="_blank" rel="noopener noreferrer">kosar_hibas.html</a></li>
+        </ul>
+    </div>
+
+</body>
+</html>
